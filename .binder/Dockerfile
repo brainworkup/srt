@@ -1,5 +1,5 @@
 FROM rocker/binder:4.2.2
-LABEL maintainer='Joey Trampush <your_email@somewhere.com>'
+LABEL maintainer='Joey Trampush <j.trampush@gmail.com>'
 USER root
 COPY . ${HOME}
 RUN chown -R ${NB_USER} ${HOME}

@@ -7,21 +7,24 @@
 
 This repository contains the data and code for our paper:
 
-> Authors, (YYYY). *Title of your paper goes here*. Name of journal/book
-> <https://doi.org/xxx/xxx>
+> Authors, (YYYY). *Deconstructing Simple and Choice Decision and
+> Movement Time Across the Spectrum of Schizophrenia Genetic Risk*. Name
+> of journal/book <https://doi.org/xxx/xxx>
 
 Our pre-print is online here:
 
-> Authors, (YYYY). *Title of your paper goes here*. Name of
-> journal/book, Accessed 19 Dec 2022. Online at
+> Authors, (YYYY). *Deconstructing Simple and Choice Decision and
+> Movement Time Across the Spectrum of Schizophrenia Genetic Risk*. Name
+> of journal/book, Accessed 19 Dec 2022. Online at
 > <https://doi.org/xxx/xxx>
 
 ### How to cite
 
 Please cite this compendium as:
 
-> Authors, (2022). *Compendium of R code and data for Title of your
-> paper goes here*. Accessed 19 Dec 2022. Online at
+> Authors, (2022). *Compendium of R code and data for Deconstructing
+> Simple and Choice Decision and Movement Time Across the Spectrum of
+> Schizophrenia Genetic Risk*. Accessed 19 Dec 2022. Online at
 > <https://doi.org/xxx/xxx>
 
 ## Contents
