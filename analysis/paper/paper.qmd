@@ -94,12 +94,162 @@ Highlights: `r rmarkdown::metadata$highlights`
 
 Here is a citation [@Marwick2017]
 
-# Background
+This quarto extension format supports PDF and HTML outputs. This template is primarily focused on generating acceptable {{< latex >}} outputs from Quarto, but renders an acceptable HTML output using the standard Quarto options.
+
+P1 -- General overview of reaction time and its relationship to cognition, health, psychiatric disorders, etc; correlation with intelligence etc;
+
+In the context of psychological experimentation, reaction time (RT) is the speed with which one responds both psychologically and motorically to the presentation of a specific stimulus in the environment.
+RT is used as both a predictor variable and an outcome variable in psychological and neuroscience behavioral tasks.
+The investigation of the latent cognitive attributes that underlie task performance, and how individual differences in those attributes can lead to differences in observed performance, allows for a better understanding of what specific variations in the cognitive process can cause specific variations in the observed task performance.
+N.
+J. Evans, M. Steyvers, S. D. Brown / Cognitive Science 42 (2018) For decision-making in particular, it is well known that multiple components of the decision-making process contribute to the response times measured in simple choice tasks, and that people differ substantially in their mental processing speed, response caution, and motor processing speed.
+...the threshold amount of evidence required to trigger a decision, which is a measure of the balance between caution and urgency; and the amount of time taken by non-decision components of processing, especially mo-tor execution time.
+
+Ngan et al (2000) examined RT, symptom profiles and course of illness in schizophrenia, finding that psychomotor poverty was associated with simple RT in patient with persistent symptoms (delete this reference to working memory)[@ackermanWorkingMemoryIntelligence2005].
+They further showed that disorganization was associated with poorer performance on the choice RT task in both patient groups (Ngan et al, 2000).[@Bogacz2010]
+
+In terms of development/age, simple reaction time shortens from infancy into the late 20s, then increases slowly until the 50s and 60s, and then lengthens faster as the person gets into his 70s and beyond (Welford, 1977; Jevas and Yan, 2001; Luchies et al., 2002; Rose et al., 2002; Der and Deary, 2006).
+
+P2 -- Standard RT tasks do not separate cognitive processing speed from motor speed; Elementary visual perceptual speed
+
+Perceptual decision time: The timing and accuracy of perceptual decision-making is exquisitely sensitive to fluctuations in arousal (van Kempen et al., 2019).
+SRT: In simple reaction time experiments, participants respond as quickly as possible anytime a stimulus appears.
+Simple reaction time is, in essence, a "baseline" measure of how quickly a person responds when no other mental processing (e.g., discrimination, response type) is required.
+Average simple reaction times for college students are about 160 ms for auditory stimuli and 190 ms for visual stimuli (Galton, 1899; although, interestingly, simple reaction times seem to have increased since they were first measured in the 1800s, see Silverman, 2010).
+A slightly more complicated reaction time task is recognition reaction time, more commonly called the go/no-go task.
+In that task, participants respond ("go") to only one particular stimulus and withhold responses ("no-go") to all other stimuli.
+Another task is the choice reaction time task, in which participants see two different stimuli, and each stimulus is associated with a particular response (e.g., button 1 for red squares and button 2 for blue squares).
+Note that this is different from go/no-go tasks because it requires responses to all stimuli, not just one.
+[link](https://www.neurobs.com/manager/content/docs/psychlab101_experiments/Simple%20Reaction%20Time/description.html)
+
+The advantage of SRT tests is to allow simple analysis of the few mechanisms accounting for response rapidity (Godefroy et al 2010).
+SRT tasks involve four critical processes: (1) a perceptual process required to determine that a relevant signal is presented, (2) a decision to trigger the motor response, (3) a motor process, and (4) a central attentional process (Godefroy et al 2010).
+
+Psychophysical assessment of processing speed: Inspection time.
+We name this a psychophysical assessment of processing speed because it eliminates the motor response time that is part of the reaction times in those tasks.
+The task is a forced choice, two-alternative visual discrimination.
+The inspection time task we used here has been illustrated and described in detail else-where (Deary et al., 2007; Deary, Simonotto, et al., 2004).
+All stimuli were presented on a computer with a vertical refresh rate of 160 Hz.
+The two stimuli that must be discriminated were pi-type shapes with markedly different parallel vertical lines.
+The participant's task was to decide whether the longer line was on the right or the left.
+They indicated the choice after each trial by pressing the 1 or 2 key on the number pad of a computer keyboard.
+Responses were made at leisure; no reaction times were recorded.
+The stimuli were presented 10 times at each of 15 durations, ranging from 6 ms to 200 ms, which occurred at random.
+The 36 participants who failed to score 17 or more out of 20 in the sum of the two easiest durations (150 ms and 200 ms) were excluded.
+As expected, group mean responses increased from chance (50% correct) at the shortest exposure durations to almost perfect responding (about 100% correct) at the longest durations.
+The score used was the total number correct out of 150 responses.
+
+P3 - Specific studies summarizing the degree of impairment in schizophrenia in terms of simple and choice reaction time (and movement time if it exists)
+
+"As reaction time (RT) studies can be considered the"north star" of schizophrenia research, they also appear to be a microcosm of psychological research in this disorder, if not of psycho-pathology generally" from: (Nuechterlein, 1977).
+
+P4 -- SZ genetics
+
+A major role of inherited genetic variants in the etiology of schizophrenia is supported by the high heritability of this complex disorder (Sullivan, 2005).
+In recent years, genome wide association studies (GWAS) with increasing sample sizes have been able to detect increasingly more risk-associated loci (International Schizophrenia Consortium et al., 2009; Schizophrenia Psychiatric Genome-Wide Association Study, 2011; Schizophrenia Working Group of the Psychiatric Genomics, 2014).
+The most recent state-of-the-art GWAS of schizophrenia conducted by the Psychiatric Genetics Consortium (PGC) identified 108 risk-associated genetic loci achieving genome-wide statistical significance (P \< 5 x 10^e8^), but each locus accounted for only a very small fraction of genetic risk, with odds ratios generally between 0.9 and 1.1 (Schizophrenia Working Group of the Psychiatric Genomics, 2014), which is consistent with the putative polygenic architecture of schizophrenia.
+This phenomenon is also consistent with previous family studies (Gottesman and Shields, 1967; McGue et al., 1985) showing that the change in relative risk with decreasing relatedness is inconsistent with Mendelian inheritance patterns, and with the presence of a majority of sporadic cases not linked to a family history of schizophrenia (Yang et al., 2010) (Chen et al., 2018).
+{from Chen/Ursini/Brain/2018/ Schizophrenia polygenic risk score predicts mnemonic hippocampal activity}
+
+P5 -- Summary
 
 # Methods
 
-# Results
+We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study.
+<!-- 21-word solution (Simmons, Nelson & Simonsohn, 2012; retrieved from http://ssrn.com/abstract=2160588) -->
 
+## Participants
+
+The CBDB Sibling Study sample, which has been described perversely, consisted of 600 volunteers aged between 18 and 60 years who were divided into 3 groups: ???
+schizophrenia participants, ???
+of their unaffected siblings as well as ???
+healthy controls.
+
+A total of 191 unrelated and extensively evaluated healthy volunteers (73 males; mean age 30.3 ± 8.7 years) with high quality genetic and neuroimaging data were included in the discovery analysis of association between PRS and hippocampal activity (Table 1).
+The participants were all Caucasians of European ancestry and were selected from the Clinical Brain Disorders Branch Sibling Study of schizophrenia at the National Institute of Mental Health (Daniel R. Weinberger, Principal Investigator).
+The study was approved by the Institutional Review Board of the Intramural Program of the National Institute of Mental Health.
+All participants were assessed in person with a Structured Clinical Interview for DSM-IV (American Psychiatric Association, 1994).
+Exclusion criteria for healthy participants included: presence of a psychiatric disorder at the time of the study and by history; having a first-degree relative with a psychiatric disorder; IQ580; recent drug or alcohol abuse (within 1 year) or 45 years of previous abuse; substantial medical or neurological conditions; and current psychotropic pharmacological treatment.
+Details of exclusion criteria can be found in the Supplementary material.
+Only right-handed participants (Edinburgh Handedness Index (EHI) 4 80) with retrieval accuracy above chance (450%) were included in this study, to analyze the relationship between genetic risk and hippocampal activity, reducing the potential confounding effect related to handedness, and to differences in successful and unsuccessful encoding.
+After a complete description of the study to the participants, written informed consent was obtained.
+
+For the schizophrenia group participants were included if they were diagnosed with either schizophrenia, schizoaffective disorder, psychosis not otherwise specified or schizoid personality disorder.
+All patients were stable and were treated with neuroleptic medication during the time of the study.
+The unaffected siblings were approved to the study even if they had been diagnosed with a mood / anxiety disorder (\~ 37%) or personality disorder (\~ 5%) though the majority had no medical history.
+Participants were excluded of the control group if they had first-degree relatives with schizophrenia spectrum disorder, were diagnosed with Axis I or Axis II disorder or took psychotropic medication during at the time of the testing.
+
+At the beginning all participants were medically screened and had to partake two separate diagnostic interviews with two research psychiatrists.
+Volunteers were excluded if they had a history of head trauma with extended loss of consciousness, alcohol or drug abuse within the last 6 months, IQ less than 70 or evidence of a learning disability.
+
+## Clinical Evaluation
+
+SCID-I/SCID-II
+
+## Neuropsychological Evaluation
+
+### Multi-Operational Apparatus for Reaction Time (MOART)
+
+To measure RT in the current study the Multi-Operational Apparatus for Reaction Time (MORAT) system Model ???
+was used.
+It enables researcher to study higher areas of the brain using simple RT tasks like Go / No Go tasks as well as examine cognitive processing by means of more complex discriminate RT tasks.
+Using an interference tapping task MORAT may also be used to look into executive function (Reference: Manual).
+
+### SRT
+
+In the current study all volunteers were required to perform two types of RT tasks: the simple RT as well as the choice RT task.
+During the performance of both tasks the participants sat on a table in front of the 21.00'' x 11.20'' MORAT system resting their index finger on the main key site at the bottom of the panel (referred to here as the "H1" button).
+(Figure #1?).
+Each but-ton has dual zone keys for precision hit detection.
+
+In the simple RT task a red colored visual cue ("GO" stimulus) which indicate to lift the finger off of the C0 key and tap the middle button/key (referred to as the "M1" button $$C5$$) as quick-ly as possible was presented.
+
+### CRT
+
+In contrast however, in the choice RT task the "GO" stimulus was presented over one of eight lights and the proband had to press the to the light corresponding key (L1-L4 and R1-R4) as quickly as possible.
+
+In both paradigms, RT could be deconstructed into two subprocesses: 1) time measured as the duration between stimulus onset and lifting the finger off of the H1 key, termed "Decision Time (DT)"; and 2) the movement time recorded as the duration between lifting the finger and pressing the corresponding target key (M1 for SRT, or L1-L4/R1-R4 for CRT), "Motor Time (MT)".
+
+## Statistical Analysis Procedures
+
+MOART performance prediction of independent neurocognitive functions We conducted a series of linear regression analyses to determine the degree to which RT and MT performance during the MOART was able to predict cognitive performance across a battery of independent neuropsychological tests and domains.
+To minimize the number of statistical tests conducted (and hence minimizing the risk of Type II errors), we collapsed right- and left-hand performance across the four conditions (simple RT, simple MT, choice RT, and choice MT).
+We also collapsed the two non-psychosis groups (healthy controls and unaffected siblings) into one group given that they did not differ from each other in RT or MT. Next, we sought to know whether the findings within our expanded control group were replicable in our schizophrenia cases.
+Age and sex were adjusted for in the first block of the analysis, and the four reaction time variables were added in the second block using stepwise regression.
+At each step, the independent variable not in the equation that has the smallest probability of F is entered, if that probability is sufficiently small.
+Variables already in the regression equation are removed if their probability of F becomes sufficiently large.
+The method terminates when no more variables are eligible for inclusion or removal.
+P-values were corrected for multiple testing.
+The fol-lowing cognitive variables were examined as the outcome measure: 1) general cognitive ability ("g"); 2) years of education; 3) WAIS Full-scale IQ estimate; 4) WRAT Word Reading (premorbid ability); 5) Trails A; 6) Trails B.
+
+## Analysis
+
+```{r clean}
+source("R/clean.R")
+# see R/clean.R
+# this chunk (as long as it is empty, comments don't count) runs external
+# code from scripts listed in the YAML
+# see also https://yihui.org/knitr/demo/externalization/
+```
+
+```{r srt-hc}
+summary(srt_hc$moart_simple_right_rt)
+```
+
+## Including Fancy Plots
+
+```{r}
+#| label: srt-r
+#| echo: false
+library(ggplot2)
+ggplot(srt_hc, aes(moart_simple_right_rt, moart_simple_right_mt)) +
+  geom_point() +
+  theme_minimal() +
+  NULL
+```
+
+# Results
+TODO:
 <!-- Here's some example analysis code: -->
 
 ```{r}

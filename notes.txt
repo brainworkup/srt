@@ -10,3 +10,18 @@ quarto render analysis/paper/paper.qmd
 quarto render analysis/paper/paper.qmd --to arxiv-pdf output-file paper-arxiv.pdf
 
 quarto render analysis/paper/elsevier/elsevier.qmd --to elsevier-pdf
+
+## pak/renv
+
+install.packages('renv'); renv::restore()
+
+FROM rocker/binder:4.2.2
+LABEL maintainer='Joey Trampush <j.trampush@gmail.com>'
+USER root
+COPY . ${HOME}
+RUN chown -R ${NB_USER} ${HOME}
+USER ${NB_USER}
+
+RUN wget https://github.com/brainworkup/srtraw/master/DESCRIPTION && R --vanilla -s -e "options(repos = list(CRAN = 'http://cran.rstudio.com'));  install.packages('renv'); renv::restore()"
+
+RUN rm DESCRIPTION.1; exit 0
