@@ -13,5 +13,6 @@
     "sash.hoverBorder": "#e33de0",
     "tab.activeBorder": "#e33de0"
   },
-  "peacock.color": "#cf1ecc"
+  "peacock.color": "#cf1ecc",
+  "peacock.remoteColor": "#42dea5"
 }
