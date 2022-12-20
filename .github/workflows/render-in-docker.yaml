@@ -1,0 +1,11 @@
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile
+      - name: Run the Docker image
+        run: docker run --name test-image --detach --publish 80:80 test-image
