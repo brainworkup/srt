@@ -14,5 +14,9 @@
     "tab.activeBorder": "#1b1041"
   },
   "peacock.color": "#cf1ecc",
+<<<<<<< HEAD
   "peacock.remoteColor": "#0a0618"
+=======
+  "peacock.remoteColor": "#42dea5"
+>>>>>>> 61d8f09d7ca7cafa55eb12524128f446f20133ae
 }
