@@ -1,0 +1,10 @@
+# Notes
+
+## rrtools setup
+
+
+## quarto
+
+quarto render analysis/paper/paper.qmd --to arxiv-pdf output-file paper-arxiv.pdf
+
+quarto render analysis/paper/paper.qmd --to elsevier-pdf output-file paper-elsevier.pdf
