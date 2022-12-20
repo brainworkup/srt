@@ -1,18 +1,18 @@
 ---
-title: "Title Goes Here"
+title: "Deconstructing Simple and Choice Decision and Movement Time Across the Spectrum of Schizophrenia Genetic Risk"
 author:
-  - Jane Doe:
+  - Joey Trampush:
       correspondence: "yes"
-      email: janedoe@fosg.org
-      orcid: 0000-0003-1689-0557
+      email: joey.trampush@med.usc.edu
+      orcid: 0000-0003-0830-508X
       institute:
-        - fosg
+        - usc
         - fop
   - John Q. Doe:
       institute: fosg
       orcid: 0000-0003-1689-0558
-  - Peder Ås:
-      institute: fosg
+  - Dwight Dickinson:
+      institute: nimh
       orcid: 0000-0003-1689-0559
   - Juan Pérez:
       orcid: 0000-0003-1689-0551
@@ -22,7 +22,7 @@ author:
       orcid: 0000-0003-1689-0552
 institute:
   - fosg:
-      name: Formatting Open Science Group
+      name: Keck School of Medicine of USC
       address: 23 Science Street, Eureka, Mississippi, USA
   - fop: Federation of Planets
 title-block-published: "Last updated"  
@@ -51,6 +51,11 @@ keywords: |
 highlights: |
   These are the highlights. 
 ---
+
+```{r}
+library(rrtools)
+```
+
 
 <!-- This is the format for text comments that will be ignored during renderings. Do not put R code in these comments because it will not be ignored. -->
 
