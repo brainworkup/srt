@@ -45,7 +45,6 @@ Imports:
     polspline (>= 1.1.22),
     renv (>= 0.16.0-40),
     rpart (>= 4.1.19),
-    rrtools (>= 0.1.5),
     sfsmisc (>= 1.1-14),
     snow (>= 0.4-4),
     spatial (>= 7.3-15),
