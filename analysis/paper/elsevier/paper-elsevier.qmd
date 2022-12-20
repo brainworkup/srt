@@ -43,6 +43,20 @@ format:
   arxiv-html: default
   elsevier-pdf:
     keep-tex: true
+    journal:
+      name: Biological Psychiatry
+      formatting: preprint
+      model: 3p
+      layout: onecolumn
+      cite-style: number
+      graphical-abstract: "![](abstract.png)"
+      highlights:
+        - Highlight 1
+        - Highlight 2 
+        - Highlight 3
+    include-in-header: 
+      text: |
+        \newpageafter{author}
 
 execute:
   echo: true
@@ -63,6 +77,9 @@ keywords: |
   schizophrenia; reaction time; keyword 3
 highlights: |
   These are the highlights. 
+pdf-engine: pdflatex
+pdf-engine-opt: -outdir=elsevier
+# order: [abstract, keywords, highlights, title, author, title-block-published, text, colophon, references]
 ---
 
 ```{r}

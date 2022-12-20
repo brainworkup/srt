@@ -5,6 +5,8 @@
 
 ## quarto
 
+quarto render analysis/paper/paper.qmd 
+
 quarto render analysis/paper/paper.qmd --to arxiv-pdf output-file paper-arxiv.pdf
 
-quarto render analysis/paper/paper.qmd --to elsevier-pdf output-file paper-elsevier.pdf
+quarto render analysis/paper/elsevier/elsevier.qmd --to elsevier-pdf
