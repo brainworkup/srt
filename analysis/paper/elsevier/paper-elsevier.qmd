@@ -30,17 +30,6 @@ date: now
 date-format: long
 
 format: 
-  docx:
-    reference-doc: "../templates/template.docx" # Insert path for the DOCX file
-  pdf:
-    cite-method: biblatex
-  arxiv-pdf:
-    keep-tex: true  
-    linenumbers: false
-    doublespacing: false
-    runninghead: "Schizophrenia Reaction Time"
-    cite-method: biblatex
-  arxiv-html: default
   elsevier-pdf:
     keep-tex: true
     journal:

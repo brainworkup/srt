@@ -41,7 +41,7 @@ keywords:
   - keyword1
   - keyword2
 date: last-modified
-bibliography: bibliography.bib
+bibliography: references.bib
 format:
   elsevier-pdf:
     keep-tex: true

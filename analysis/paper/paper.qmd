@@ -1,13 +1,28 @@
 ---
 title: "Deconstructing Simple and Choice Decision and Movement Time Across the Spectrum of Schizophrenia Genetic Risk"
 author:
-  - Joey Trampush:
-      correspondence: "yes"
+  - name: Joey W. Trampush
       email: joey.trampush@med.usc.edu
+      institute: 
+        - id: usc
+          name: Some Institute of Technology
+          department: Department Name
+          address: Street Address
+          city: City
+          state: State
+          postal-code: Postal Code
+      attributes:
+        corresponding: true
+      note: This is the first author footnote.
       orcid: 0000-0003-0830-508X
-      institute:
-        - usc
-        - nimh
+
+  # - Joey Trampush:
+  #     correspondence: "yes"
+  #     email: joey.trampush@med.usc.edu
+  #     orcid: 0000-0003-0830-508X
+  #     institute:
+  #       - usc
+  #       - nimh
   - Samantha Fleck:
       institute: usc
       orcid: 0000-0000-0000-0000
@@ -34,15 +49,15 @@ format:
     reference-doc: "../templates/template.docx" # Insert path for the DOCX file
   pdf:
     cite-method: biblatex
-  arxiv-pdf:
-    keep-tex: true  
-    linenumbers: false
-    doublespacing: false
-    runninghead: "Schizophrenia Reaction Time"
-    cite-method: biblatex
-  arxiv-html: default
-  elsevier-pdf:
-    keep-tex: true
+  # arxiv-pdf:
+  #   keep-tex: true  
+  #   linenumbers: false
+  #   doublespacing: false
+  #   runninghead: "Schizophrenia Reaction Time"
+  #   cite-method: biblatex
+  # arxiv-html: default
+  # elsevier-pdf:
+  #   keep-tex: true
 
 execute:
   echo: true
@@ -62,7 +77,8 @@ abstract: |
 keywords: |
   schizophrenia; reaction time; keyword 3
 highlights: |
-  These are the highlights. 
+  These are the highlights.
+pdf-engine: pdflatex
 ---
 
 ```{r}
@@ -225,7 +241,7 @@ The fol-lowing cognitive variables were examined as the outcome measure: 1) gene
 ## Analysis
 
 ```{r clean}
-source("R/clean.R")
+#source("R/clean.R")
 # see R/clean.R
 # this chunk (as long as it is empty, comments don't count) runs external
 # code from scripts listed in the YAML
@@ -233,7 +249,7 @@ source("R/clean.R")
 ```
 
 ```{r srt-hc}
-summary(srt_hc$moart_simple_right_rt)
+#summary(srt_hc$moart_simple_right_rt)
 ```
 
 ## Including Fancy Plots
@@ -241,11 +257,11 @@ summary(srt_hc$moart_simple_right_rt)
 ```{r}
 #| label: srt-r
 #| echo: false
-library(ggplot2)
-ggplot(srt_hc, aes(moart_simple_right_rt, moart_simple_right_mt)) +
-  geom_point() +
-  theme_minimal() +
-  NULL
+# library(ggplot2)
+# ggplot(srt_hc, aes(moart_simple_right_rt, moart_simple_right_mt)) +
+#   geom_point() +
+#   theme_minimal() +
+#   NULL
 ```
 
 # Results

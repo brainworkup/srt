@@ -2,15 +2,26 @@
 
 ## rrtools setup
 
+library(rrtools)
+rrtools::use_compendium("~/srt.rrtools")
+usethis::use_mit_license(copyright_holder = "Joey Trampush")
+rrtools::use_readme_rmd()
+rrtools::use_analysis()
+rrtools::add_dependencies_to_description()
+renv::init()
+## to git
 renv::install("benmarwick/rrtools")
 renv::record("benmarwick/rrtools")
+rrtools::use_dockerfile()
 
+renv::install("benmarwick/rrtools")
+renv::record("benmarwick/rrtools")
 
 ## quarto
 
 quarto render analysis/paper/paper.qmd 
 
-quarto render analysis/paper/paper.qmd --to arxiv-pdf output-file paper-arxiv.pdf
+quarto render analysis/paper/arxiv/arxiv.qmd --to arxiv-pdf
 
 quarto render analysis/paper/elsevier/elsevier.qmd --to elsevier-pdf
 
@@ -31,6 +42,6 @@ RUN rm DESCRIPTION.1; exit 0
 
 ## Docker
 
-docker build -t jtrampush/pj.srt . # to build your Docker image.
+docker build -t jtrampush/srt . # to build your Docker image.
 docker run jtrampush/srt.rrtools # to test your Docker image locally.
 docker push jtrampush/srt.rrtools # to push your Docker image to Docker Hub. 
