@@ -25,6 +25,9 @@ workspace:
     - fsPath: .
       selfContained: true
       name: srt
+      remote:
+        type: git
+        url: https://github.com/brainworkup/srt.git
   journal:
     dailyDomain: daily
     name: journal
@@ -65,7 +68,7 @@ workspace:
   enableRemoteVaultInit: true
   enableUserTags: true
   enableHashTags: true
-  workspaceVaultSyncMode: noCommit
+  workspaceVaultSyncMode: sync
   enableAutoFoldFrontmatter: false
   enableEditorDecorations: true
   maxPreviewsCached: 10
