@@ -1,5 +1,5 @@
 {
-  "name": "R SRT Dev Container",
+  "name": "srt",
   "build": {
     "dockerfile": "Dockerfile",
     // Update VARIANT to pick a specific R version: 4, 4.1, 4.0
@@ -19,21 +19,78 @@
   // Add the IDs of extensions you want installed when the container is created.
   "extensions": [
     // Add Jupyter, R and Python vscode extensions
-    "REditorSupport.r",
-    "rdebugger.r-debugger",
-    "ms-toolsai.jupyter",
-    "ms-toolsai.jupyter-renderers",
+    "alefragnani.project-manager",
+    "DavidAnson.vscode-markdownlint",
+    "eamodio.gitlens",
+    "GitHub.copilot",
+    "GitHub.vscode-pull-request-github",
+    "GrapeCity.gc-excelviewer",
+    "hediet.vscode-drawio",
+    "IBM.output-colorizer",
+    "ionutvmi.path-autocomplete",
+    "James-Yu.latex-workshop",
+    "Kelvin.vscode-sshfs",
+    "mhutchie.git-graph",
+    "Mohamed-El-Fodil-Ihaddaden.shinysnip",
+    "ms-python.python",
     "ms-python.python",
     "ms-python.vscode-pylance",
+    "ms-toolsai.jupyter-renderers",
+    "ms-toolsai.jupyter",
+    "quarto.quarto",
+    "rdebugger.r-debugger",
+    "REditorSupport.r",
+    "Rubymaniac.vscode-paste-and-indent",
+    "TianyiShi.rmarkdown",
+    "tomoki1207.pdf",
+    "usernamehw.errorlens",
     "vsls-contrib.codetour",
-    "GitHub.copilot"
+    "wayou.vscode-todo-highlight"
   ],
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [],
+  "features": {
+    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {},
+    // "ghcr.io/rocker-org/devcontainer-features/r-apt:0": {
+    //   "vscodeRSupport": true,
+    //   "installDevTools": true,
+    //   "installREnv": true,
+    //   "installRMarkdown": true,
+    //   "installJupyterlab": true,
+    //   "installRadian": true,
+    //   "installVscDebugger": true
+    // },
+    "ghcr.io/meaningful-ooo/devcontainer-features/fish:1": {
+      "version": "latest",
+      "fisher": true
+    },
+    // "ghcr.io/devcontainers/features/python:1": {},
+    // "ghcr.io/jungaretti/features/ripgrep:1": {},
+    // "ghcr.io/devcontainers/features/common-utils:1": {},
+    // "ghcr.io/devcontainers/features/github-cli:1": {},
+    // "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {},
+    "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {}
+    // "ghcr.io/robsyme/features/nextflow:1": {},
+    // "ghcr.io/robsyme/features/nf-test:1": {}
+  },
+  // Forward Jupyter and RStudio ports
+  "forwardPorts": [
+    8787,
+    8888
+  ],
+  "portsAttributes": {
+    "8787": {
+      "label": "Rstudio",
+      "requireLocalPort": true,
+      "onAutoForward": "ignore"
+    },
+    "8888": {
+      "label": "Jupyter",
+      "requireLocalPort": true,
+      "onAutoForward": "ignore"
+    }
+  },
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "pip3 install -r requirements.txt",
-  // Configure tool-specific properties.
-  // "customizations": {},
-  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-  "remoteUser": "vscode"
+  "postCreateCommand": "sudo rstudio-server start",
+  //"postCreateCommand": "pip3 install -r requirements.txt",
+  // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+  "remoteUser": "rstudio"
 }

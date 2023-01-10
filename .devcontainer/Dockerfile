@@ -1,6 +1,7 @@
 # R version: 4, 4.1, 4.0
-ARG VARIANT="4.2"
-FROM rocker/r-ver:${VARIANT}
+ARG VARIANT="4.2.2"
+FROM rocker/verse:${VARIANT}
+# Includes packages: devtools tidyverse tidymodels glmnet randomForest xgboost 
 
 # Use the [Option] comment to specify true/false arguments that should appear in VS Code UX
 #
@@ -10,7 +11,7 @@ ARG INSTALL_ZSH="true"
 ARG UPGRADE_PACKAGES="false"
 
 # Install needed packages and setup non-root user. Use a separate RUN statement to add your own dependencies.
-ARG USERNAME=vscode
+ARG USERNAME=rstudio
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 COPY library-scripts/*.sh /tmp/library-scripts/
@@ -43,17 +44,11 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && pip --disable-pip-version-check --no-cache-dir install okpy \
     && pip --disable-pip-version-check --no-cache-dir install scikit-learn \
     && install2.r --error --skipinstalled --ncpus -1 \
-        devtools \
         languageserver \
         httpgd \
-        tidyverse \
-        tidymodels \
         statip \
         patchwork \
         paletteer \
-        glmnet \
-        randomForest \
-        xgboost \
         here \
         doParallel \
         janitor \
@@ -66,10 +61,12 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
         plotly \
         factoextra \
         cluster \
+        tidymodels \
+        markdown \ 
         ottr \
     && rm -rf /tmp/downloaded_packages
 
-# Install summarytools and load some R package off the bat
+## Install summarytools and load some R package off the bat
 RUN R -e "devtools::install_github('https://github.com/dcomtois/summarytools/tree/0-8-9')"
 RUN R -e "library(ottr)"
 RUN R -e "library(here)"
@@ -84,7 +81,7 @@ RUN export TAG=$(git ls-remote --tags --refs --sort='version:refname' https://gi
 
 # R Session watcher settings.
 # See more details: https://github.com/REditorSupport/vscode-R/wiki/R-Session-watcher
-RUN echo 'source(file.path(Sys.getenv("HOME"), ".vscode-R", "init.R"))' >> ${R_HOME}/etc/Rprofile.site
+RUN echo 'source(file.path(Sys.getenv("HOME"), ".vscode-R", "init.R"))' >> ${HOME}/.Rprofile
 
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update \
@@ -102,3 +99,11 @@ RUN apt-get update \
     && install2.r --error --skipinstalled --ncpus -1 IRkernel \
     && python3 -m pip --no-cache-dir install jupyter \
     && R --vanilla -s -e 'IRkernel::installspec(user = FALSE)'
+
+# Expose Rstudio port. Log in with rstudio/rstudio
+EXPOSE 8787
+
+# Expose Jupyter port
+EXPOSE 8888
+
+CMD ["/init"]

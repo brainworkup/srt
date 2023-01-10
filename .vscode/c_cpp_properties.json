@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "name": "Mac",
+      "defines": [
+        "NDEBUG"
+      ],
+      "includePath": [
+        "${workspaceFolder}/src",
+        "/Library/Frameworks/R.framework/Resources/include"
+      ],
+      "compilerPath": "/usr/local/opt/gcc/bin/g++-12",
+      "cStandard": "${default}",
+      "intelliSenseMode": "macos-gcc-x64"
+    }
+  ],
+  "version": 4
+}
